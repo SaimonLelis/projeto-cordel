@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ftitulo';
+    src: url('Fontes/PassionOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ftexto';
+    src: url('Fontes/Sriracha-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+body{
+    background-color: white;
+}
+
+header{
+    background-color: black;
+    color:white;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+
+header > h1{
+    font: normal 10vw Ftitulo;
+    padding-top: 50px;
+}
+
+header > p{
+    font: normal 1em Verdana;
+    text-align: center;
+    padding-bottom: 50px;
+    /*display: block; */
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section{
+    font: normal 3.5vw Ftexto;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color:black;
+}
+
+section.imagem{
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.470) inset 6px 6px 13px 0px;
+    
+}
+
+section.normal > p{
+    margin-bottom: 40px;
+}
+
+section#img01{
+    background-image:url('imagens/background001.jpg') ;
+    background-position: right center;
+}
+section#img02{
+    background-image:url('imagens/background002.jpg') ;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.39);
+    display: inline-block;
+    text-shadow: black 1px 1px 0px;
+    padding: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
